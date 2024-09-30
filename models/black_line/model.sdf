@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="black_line">
+    <static>true</static> <!-- Keeps the line in a fixed position -->
+    <link name="link">
+      <visual name="visual">
+        <geometry>
+          <box>
+            <!-- Length (x), Width (y), Height (z) -->
+            <size>5 0.05 0.001</size> <!-- 5 meters long, 5 cm wide, 1 mm tall -->
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 0 0 1</ambient> <!-- Defines color: Black -->
+          <diffuse>0 0 0 1</diffuse> <!-- Defines how light reflects on it -->
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
